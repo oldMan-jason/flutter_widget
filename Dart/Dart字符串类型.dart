@@ -1,5 +1,4 @@
 main(List<String> args) {
-  
   //单行字符串
   String str1 = "string1";
   //多行字符串
@@ -14,4 +13,6 @@ main(List<String> args) {
   String age = "30";
   print(name1 + age);
 
+  String? myName = "12";
+  myName = null;
 }

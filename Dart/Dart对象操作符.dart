@@ -1,16 +1,12 @@
-
-
-
-class Person{
+class Person {
   String name;
   int age;
 
-  Person(this.name,this.age);
+  Person(this.name, this.age);
 
-  void printInfo(){
+  void printInfo() {
     print('${this.name} --- ${this.age}');
   }
-
 }
 
 /**
@@ -21,28 +17,17 @@ class Person{
  *  4、 .. 级联操作
  */
 main(List<String> args) {
+  Person p = Person("a", 1);
+  p.name = 'jason';
 
-    Person p;
-    p?.name = 'jason';
+  var p1 = 'json';
+  p1 = new Person('hello', 12) as String;
+  print(p1);
 
-
-    var p1 = 'json';
-    p1 = new Person('hello', 12) as String;
-    print(p1);
-
-
-    Person p3 = Person('jason', 12);
-    p3..age = 12
+  Person p3 = Person('jason', 12);
+  p3
+    ..age = 12
     ..name = 'json'
     ..printInfo()
     ..name = 'kk';
-
-
-
-
-
-
-
-
-    
 }
